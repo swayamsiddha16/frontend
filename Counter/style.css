@@ -1,0 +1,163 @@
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-size: 'Ubuntu' , sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.brand img{
+    
+    height: 60px;
+    padding: 0 12px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Verla Round',sans-serif;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    margin: 23px auto;
+    background-size: cover;
+    background-image: url("./background.png");
+}
+
+
+
+.counterItemContainer {
+    min-height: 30vh;
+    background-color: #9D84B7;
+    color: white;
+    font-family: 'Verla Round', sans-serif;
+    display: flex;
+    width: 60%;
+    border-radius: 12px;
+    border-color: blueviolet;
+    padding: 34px;
+    margin-left: 230px;
+    margin-top: 70px;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .addItem {
+    background-color: whitesmoke;
+    color: black;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subItem {
+    background-color: whitesmoke;
+    color: black;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-left: auto;
+    cursor: grab;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addItem:hover,
+  .subItem:hover {
+    background-color: lightgray;
+  }
+  
+  
+  .countItem {
+   
+    
+    font-size: 60px;
+    color: rgba(255,255,255,0.5);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-left: auto; /* Push the subItem to the right side */
+    
+  }
+.resetItem {
+  /* Button styling */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 130px;
+
+ 
+
+  /* Animation */
+  transition: background-color 0.3s ease;
+}
+
+.resetItem:hover {
+  background-color: #ddd;
+}
+
+.resetItem:active {
+  background-color: #bbb;
+}
+
+.resetItem b {
+  /* Style for the inner "b" element */
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.resetItem:hover b {
+  background-color: #555;
+}
+
+.resetItem:active b {
+  background-color: #777;
+}
